@@ -5,7 +5,6 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 import "./add";
-import "./string-binding";
 
 if (environment.production) {
   enableProdMode();

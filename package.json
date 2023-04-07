@@ -1,6 +1,6 @@
 {
   "name": "as-load-ng-test",
-  "version": "0.0.0",
+  "version": "0.27.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +9,6 @@
   },
   "private": true,
   "dependencies": {
-    "@angular-builders/custom-webpack": "^14.0.1",
     "@angular/animations": "^14.2.0",
     "@angular/common": "^14.2.0",
     "@angular/compiler": "^14.2.0",
@@ -18,17 +17,17 @@
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
-    "as-bind": "^0.8.2",
-    "as-loader": "npm:@szacskesz/as-loader@^0.13.0",
-    "assemblyscript": "0.19.10",
+    "as-loader": "npm:@szacskesz/as-loader@0.27.1-SNAPSHOT",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-builders/custom-webpack": "^14.0.1",
     "@angular-devkit/build-angular": "^14.2.5",
     "@angular/cli": "~14.2.5",
     "@angular/compiler-cli": "^14.2.0",
-    "typescript": "~4.7.2"
+    "assemblyscript": "0.27.1",
+    "typescript": "^4.8.0"
   }
 }

@@ -55,8 +55,8 @@
               "src/styles.scss"
             ],
             "scripts": [],
-            "allowedCommonJsDependencies": [ "as-loader" ],
-            "customWebpackConfig": { "path": "./additional-webpack.config.js" }
+            "customWebpackConfig": { "path": "./additional-webpack.config.js" },
+            "allowedCommonJsDependencies": ["as-loader"]
           },
           "configurations": {
             "production": {
@@ -104,6 +104,12 @@
           "defaultConfiguration": "development"
         }
       }
+    }
+  },
+  "cli": {
+    "analytics": false,
+    "cache": {
+      "enabled": false
     }
   }
 }

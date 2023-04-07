@@ -1,14 +1,8 @@
-import "as-loader/types";
-import { instantiate } from "as-loader/runtime";
 import * as assemblyModule from "./assembly/add.asc";
+import { instantiateModule } from "as-loader/dist/runtime";
 
-async function loadAndRun() {
-    const module = await instantiate<typeof assemblyModule>(assemblyModule, fetch);
-    const { add } = module.exports;
 
-    const div = document.createElement("div");
-    div.innerText = "add(1, 7) = " + add(1, 7);
-    document.body.appendChild(div);
-}
-
-loadAndRun();
+instantiateModule(assemblyModule).then(({ add, addMyObjs }) => {
+    console.warn("add(1, 7) = " + add(1, 7))
+    console.warn("addMyObjs(...) = " + JSON.stringify(addMyObjs({value: "1"} as any, {value: "7"} as any)))
+});
